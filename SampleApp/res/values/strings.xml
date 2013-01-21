@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SampleApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="data_base_sample">Database and Alarm Manager</string>
+    <string name="tab_sample">SherlockTabBar</string>
+    <string name="tab_custom_stack_sample">TabBar With Custom Stack</string>
+    <string name="hello_datebase"> Enter Event Name and Date to add a Reminder</string>
+    <string name="event_name">Event Name</string>
+    <string name="set_date">Set Date</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="create_new_fragment">Create new fragment within the same tab</string>
+
+</resources>
