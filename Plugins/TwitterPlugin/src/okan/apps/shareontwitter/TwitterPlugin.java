@@ -13,17 +13,16 @@ public class TwitterPlugin extends CordovaPlugin {
 
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-
+		
 		if (action.equals(ACTION_SHARE_ON_TWITTER)) {
 			
-			shareOnTwitter(action, args, callbackContext);
+			return shareOnTwitter(action, args, callbackContext);
 			
 		} else {
 			PluginResult pluginResult = new PluginResult(PluginResult.Status.INVALID_ACTION);
 			callbackContext.sendPluginResult(pluginResult);	
 			return false;
 		}
-		return true;
 	}
 
 	private boolean shareOnTwitter(String action, JSONArray jsonArray,final  CallbackContext callbackContext) throws JSONException {
