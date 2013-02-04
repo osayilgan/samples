@@ -1,3 +1,28 @@
+Sample App
+=======
+
+Sample app has two features, one is a sample for database operations using with Android Alarm Manager
+to create Different kinds of Reminders.
+
+The other one is a small solution for an existing problem in Android.
+
+Since ActivityGroup and TabActivity is deprecated I started to use Fragments in the Tab Host.
+
+Problem : In the case you need to replace a Fragment for Fragment in any tab in Tab Host
+You do not have a seperated stack for each tab under Tab Host.
+
+Solution : I implemented a Custom Stack example that you can keep seperated stack for each tab under Tab Host
+
+E.g
+
+Tab 1 : Fragment A > Fragment B > Fragment C
+Tab 2 : Fragment D > Fragment E
+
+If you are under the Tab 1 and if you navigate through Fragment C from Fragment A
+after that If you can the Tab to Tab 2 and switch back to Tab 1, you will see Fragment C as you left before you
+changed the Tab. And if you press back button you will be navigated to Fragment B.
+
+
 Twitter Plugin and Twitter Manager
 =======
 
