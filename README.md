@@ -24,3 +24,7 @@ CAUTION: Using PhoneGap ≥ 2.0 (aka Cordova) you have to add this line into res
 Using the plugin
 
 Take a look on twitter_controller.js to learn how to use this plugin.
+
+Using the Manager
+
+To use the manager you need to fill required fields in the Constants.java class.
