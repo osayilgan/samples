@@ -1,4 +1,4 @@
-samples
+Twitter Plugin and Twitter Manager
 =======
 
 Twitter plugin for Cordova
