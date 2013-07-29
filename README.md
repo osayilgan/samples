@@ -57,11 +57,17 @@ To use the manager you need to fill required fields in the Constants.java class.
 Sample Application 2
 =======
 
-Sample Application 2 is mostly based on SQLite Database operations.
+Sample Application 2 is mostly based on SQLite Database operations and Communications between Service and Activity.
 
 It has samples for ;
 
 - Creating Tables with references to each other.
 - General Search in whole Database regardless of Object type through predefined Collection.
 - Easier Data Source control for saving and reading Objects from/to SQLite Database.
+
+- Audio Service.
+  - Playing Audio in the background in the Sticky Service with Android Media Player.
+  - Support for NON-Straming devices.
+    - e.g Most of the Samsung Devices have some issues for streaming Audio with Media Player
+  - Updating UI with the Data received from Service inside Broadcast Receiver.
 
