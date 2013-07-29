@@ -53,3 +53,15 @@ Take a look on twitter_controller.js to learn how to use this plugin.
 Using the Manager
 
 To use the manager you need to fill required fields in the Constants.java class.
+
+Sample Application 2
+=======
+
+Sample Application 2 is mostly based on SQLite Database operations.
+
+It has samples for ;
+
+- Creating Tables with references to each other.
+- General Search in whole Database regardless of Object type through predefined Collection.
+- Easier Data Source control for saving and reading Objects from/to SQLite Database.
+
