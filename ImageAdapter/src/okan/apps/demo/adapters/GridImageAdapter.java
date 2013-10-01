@@ -23,7 +23,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 /**
- * Base Adapter for thumbnail images.
+ * Base Adapter for thumbnail images in GridView.
  * 
  * @author Okan SAYILGAN
  */
@@ -48,7 +48,7 @@ public class GridImageAdapter extends BaseAdapter {
 	public int getCount() {
 		return photos.size();
 	}
-
+	
 	@Override
 	public FlickrPhoto getItem(int position) {
 		return photos.get(position);

@@ -54,6 +54,7 @@ public class MainController extends FragmentActivity implements GridFragmentInte
 		/* Check if the device is connected to internet */
 		if (NetworkUtils.isConnected(this)) {
 			
+			/* Add GridView to FragmentContainer */
 			attachGridView();
 			
 		} else {
@@ -64,7 +65,7 @@ public class MainController extends FragmentActivity implements GridFragmentInte
 	}
 	
 	/**
-	 * Attaches Grid View with images
+	 * Attaches Grid View with images to the main fragment container.
 	 */
 	public void attachGridView() {
 		
@@ -97,7 +98,7 @@ public class MainController extends FragmentActivity implements GridFragmentInte
 		/* Save Previously Clicked item position */
 		clickedItemPosition = position;
 		
-		// Navigate to Full Screen image Fragment.
+		/* Navigate to Full Screen image Fragment */
 		goToFullScreenImageView();
 	}
 	
@@ -110,13 +111,18 @@ public class MainController extends FragmentActivity implements GridFragmentInte
 		return clickedItemPosition;
 	}
 	
+	/**
+	 * Saves List of Photos in MainController to be able to retrieve it back in the Fragments.
+	 * 
+	 * @param photoList		List of FlickrPhoto Object
+	 */
 	public static void savePhotos(List<FlickrPhoto> photoList) {
 		photos = photoList;
 	}
 	
 	/**
 	 * Retrieves the Photos stored in Main Activity
-	 * @return
+	 * @return		List of FlickrPhoto Object
 	 */
 	public static List<FlickrPhoto> getPhotos() {
 		return photos;

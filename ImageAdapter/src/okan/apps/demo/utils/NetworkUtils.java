@@ -70,12 +70,14 @@ public class NetworkUtils {
 				stringBuilder.append(line + "\n");
 			}
 			
-			Log.i("RESPONSE CODE", " >>  " + responseCode + "("+ url +")");
+			/* Close Input Stream and Disconnect the HTTP Connection */
+			inputStream.close();
+			httpConnection.disconnect();
 			
 			return stringBuilder.toString();
+			
 		} else {
 			
-			Log.i("RESPONSE CODE", " >>  " + responseCode + "("+ url +")");
 			return null;
 		}
 	}

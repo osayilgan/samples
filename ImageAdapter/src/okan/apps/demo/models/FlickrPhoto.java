@@ -103,6 +103,8 @@ public class FlickrPhoto {
 		return new FlickrPhoto(id, owner, secretCode, server, farm, title, isPuclic, isFriend, isFamily);
 	}
 	
+	/********************* Rest of Getters and Setters ************************/
+	
 	public long getId() {
 		return id;
 	}

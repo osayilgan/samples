@@ -3,28 +3,21 @@ package okan.apps.demo.adapters;
 import java.util.ArrayList;
 import java.util.List;
 
-import okan.apps.demo.custom.ui.SquareNetworkImageView;
 import okan.apps.demo.imageadapter.R;
 import okan.apps.demo.models.FlickrPhoto;
 import okan.apps.demo.utils.ImageViewUtils;
 import okan.apps.demo.views.FullScreenImageFragment.FullScreenImageFragmentInterface;
-import okan.apps.demo.views.GridFragment.GridFragmentInterface;
-import android.content.Context;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
-import com.android.volley.MGVolleyUtil;
 import com.android.volley.toolbox.NetworkImageView;
 
 /**
- * View Pager
+ * View Pager adapter Class. 
  * 
  * @author Okan SAYILGAN
  */

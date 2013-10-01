@@ -1,11 +1,8 @@
 package okan.apps.demo.views;
 
-import java.util.ArrayList;
-
 import okan.apps.demo.adapters.ImageViewPagerAdapter;
 import okan.apps.demo.imageadapter.R;
 import okan.apps.demo.main.MainController;
-import okan.apps.demo.models.FlickrPhoto;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -57,6 +54,7 @@ public class FullScreenImageFragment extends Fragment {
 	public void onAttach(Activity activity) {
 		super.onAttach(activity);
 		
+		/* Set the Listener */
 		listener = (FullScreenImageFragmentInterface) activity;
 	}
 	
@@ -73,6 +71,7 @@ public class FullScreenImageFragment extends Fragment {
 			@Override
 			public void onClick(View v) {
 				
+				/* Notify MainController about this Click on ImageView */
 				listener.onImageClick();
 			}
 		});
