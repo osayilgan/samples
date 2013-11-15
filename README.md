@@ -67,7 +67,5 @@ It has samples for ;
 
 - Audio Service.
   - Playing Audio in the background in the Sticky Service with Android Media Player.
-  - Support for NON-Straming devices.
-    - e.g Most of the Samsung Devices have some issues for streaming Audio with Media Player
   - Updating UI with the Data received from Service inside Broadcast Receiver.
 
